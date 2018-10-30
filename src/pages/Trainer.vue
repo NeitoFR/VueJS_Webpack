@@ -1,20 +1,19 @@
 <template>
     <div>
         <h1>Hello, I'm your {{ message }} page</h1>
-        <h2>All Tasks</h2>
-        <ul>
-            <li v-for="item in tasks" v-text="item.desc"></li>
-        </ul>
-        <h2>Uncompleted Tasks</h2>
-        <ul>
-            <li v-for="item in IncompleteTasks" v-text="item.desc" v-if="!item.completed"></li>
-        </ul>
+        <TaskList></TaskList>
+
+
     </div>
 </template>
 
 <script>
+import { TaskList } from "../components/TaskList.vue";
 export default {
   name: "Trainer",
+  components: {
+    TaskList
+  },
   data: function() {
     return {
       message: "training",
