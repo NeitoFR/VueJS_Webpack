@@ -4,13 +4,6 @@
 
 <script>
 import Vue from "vue";
-
-// module.exports = {
-//   name: "TaskList",
-//   data() {
-//     return {};
-//   }
-// };
 export default {
   name: "TaskList"
 };
