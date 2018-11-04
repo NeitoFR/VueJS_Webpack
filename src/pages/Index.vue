@@ -1,20 +1,26 @@
 <template>
-  <div class="container">
+  <div>
     <Header></Header>
-    <HomePage></HomePage>
+    <ScenarioManager></ScenarioManager>
+    <!-- <Scenario></Scenario> -->
+    <!-- <DomoticRoom></DomoticRoom> -->
   </div>
-    
+
 </template>
 
 <script>
 import Header from "../components/common/Header"
-import HomePage from "../components/HomePage"
+import Scenario from "../components/ScenarioManager/Scenario"
+import DomoticRoom from "../components/DomoticRoom"
+import ScenarioManager from "../components/ScenarioManager/ScenarioManager"
 
 export default {
   name: "Index",
   components: {
     Header,
-    HomePage
+    Scenario,
+    DomoticRoom,
+    ScenarioManager
   }
 };
 </script>

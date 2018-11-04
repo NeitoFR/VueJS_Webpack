@@ -13,10 +13,5 @@ new Vue({
   router,
   store,
   components: { App },
-<<<<<<< HEAD
-  template: '<App/>'
-});
-=======
   template: '<App/>',
 })
->>>>>>> 96c1b1f12c060c3d9863ecaa8d3ac0772baac669

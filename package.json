@@ -10,11 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-<<<<<<< HEAD
     "mqtt": "^2.18.8",
-=======
-    "express": "^4.16.4",
->>>>>>> 96c1b1f12c060c3d9863ecaa8d3ac0772baac669
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
