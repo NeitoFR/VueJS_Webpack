@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Trainer from "../pages/Trainer";
-import HomePage from "../pages/HomePage";
+import Index from "../pages/Index";
 
 Vue.use(Router);
 
@@ -9,12 +9,12 @@ export default new Router({
   routes: [
     {
       path: "/",
-      redirect: "/training"
+      redirect: "/index"
     },
     {
-      path: "/homepage",
-      name: "HomePage",
-      component: HomePage
+      path: "/index",
+      name: "Index",
+      component: Index
     },
     {
       path: "/training",

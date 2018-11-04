@@ -2,13 +2,11 @@
     <div>
         <h1>Hello, I'm your {{ message }} page</h1>
         <TaskList></TaskList>
-
-
     </div>
 </template>
 
 <script>
-import { TaskList } from "../components/TaskList.vue";
+import TaskList from "../components/TaskList";
 export default {
   name: "Trainer",
   components: {
