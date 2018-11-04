@@ -1,0 +1,18 @@
+Actions:
+    * Press Cmd+Enter (Ctrl+Enter on Windows and Linux) to add a new task
+    * Complete a task by pressing Alt+d @done
+    * Re-open a completed task by pressing Alt+d
+    * Cancel a task by pressing Alt+c @cancelled
+    * Complete a cancelled task by pressing Alt+d
+
+Tagging:
+    * You can add tags using @ sign, like this @tag
+    * You can use following pre-existing tags to mark tasks @critical @high @low @today 
+    * Auto intellisense is provided to help you in finding tags
+
+Task:
+    ☐ Faire du REST pour les images (stocker dans  un fichier JSON {userId :{image: imageName})
+
+Tuto webpack : 
+    ☐ Minification et Lazy loading
+    ☐ VueJS 2 (7/15)

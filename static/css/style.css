@@ -1,0 +1,397 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.center {
+    margin: auto;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    background-color: rgb(29, 29, 170);
+    width: 450px;
+    height: 70px;
+    line-height: 30px;
+}
+
+.inscription {
+    position: absolute;
+    color: white;
+    border-radius: 40px;
+    background-color: rgb(146, 146, 146);
+    height: 30px;
+    line-height: 30px;
+    right: 0;
+    margin: 20px 30px 0 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.scenario {
+    background-color: #f1f1f1;
+    height: inherit;
+    width: 400px;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scenario-title {
+    width: 75%;
+    float: left;
+}
+
+.scenario-time, .domotic-toggle-button {
+    text-align: right;
+    width: 25%;
+    float: left;
+}
+
+.img-scenario {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}
+
+.scenario-text {
+    width: 290px;
+    margin: 0 10px 15px 0;
+}
+
+.domotic-room {
+    background-color: #f1f1f1;
+    height: inherit;
+    width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.domotic-text {
+    width: 290px;
+    margin: 0px 10px 15px 10px;
+}
+
+.domotic-title {
+    color: #3f51b5;
+    width: 75%;
+    padding-top: 8px;
+    float: left;
+    text-align: center;
+}
+
+.img-room-common {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-room {
+    width: 82px;
+    padding-left: 18px;
+}
+
+#show-modal:hover {
+    cursor: pointer;
+}
+
+/* Toggle button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Modal */
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: all 1s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all 1s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-body {
+    margin: 20px 0;
+}
+
+.modal-default-button {
+    float: right;
+}
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+.card {
+    word-wrap: break-word;
+    margin: 24px;
+    padding: 16px;
+    color: #757575;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.inline--flex {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.flex--row {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex--row--rev {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.flex--col {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex--col--rev {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.flex--nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flex--wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex--wrap--rev {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.flex--left {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.flex--center {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex--right {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.flex--justify {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.flex--spaced {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.flex--top {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex--middle {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex--bottom {
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.flex--stretch {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.flex--baseline {
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.flex--top--multi {
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.flex--middle--multi {
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.flex--bottom--multi {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+}
+
+.flex--stretch--multi {
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+.flex--justify--multi {
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+
+.flex--spaced--multi {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+}
+
+.flex__item {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex__item--msfix {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.flex__item--top {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.flex__item--middle {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.flex__item--bottom {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.flex__item--baseline {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+}

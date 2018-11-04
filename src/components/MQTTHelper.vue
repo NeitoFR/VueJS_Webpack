@@ -17,9 +17,7 @@
 import mqtt from "mqtt";
 import { mapState, mapMutations } from "vuex";
 import store from "../store";
-
 var client;
-
 export default {
   data() {
     return {
@@ -65,6 +63,7 @@ export default {
       "ws://localhost:1884",
       { username: "iot", password: "iot" }
     );
+
     client.on(
       "connect",
       function() {
